@@ -10,8 +10,8 @@ public class Main {
         StringTokenizer st = new StringTokenizer(br.readLine());
 
         for(int i = 0; i < n; i++) {
-			tree[i] = Integer.parseInt(st.nextToken());
-		}
+		tree[i] = Integer.parseInt(st.nextToken());
+	}
         
         Arrays.sort(tree);
         int answer = Math.max(tree[0] * tree[1], tree[n-2] * tree[n-1]);
